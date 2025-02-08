@@ -75,37 +75,37 @@ Price                    48212
 
 ------------------------------------
 Columns feature 
+
 id
-
 [     0      1      2 ... 299997 299998 299999]
+
 Brand
-
 ['Jansport' 'Under Armour' 'Nike' 'Adidas' 'Puma' nan]
+
 Material
-
 ['Leather' 'Canvas' 'Nylon' nan 'Polyester']
+
 Size
-
 ['Medium' 'Small' 'Large' nan]
+
 Compartments
-
 [ 7. 10.  2.  8.  1.  3.  5.  9.  6.  4.]
+
 Laptop Compartment
-
 ['Yes' 'No' nan]
+
 Waterproof
-
 ['No' 'Yes' nan]
+
 Style
-
 ['Tote' 'Messenger' nan 'Backpack']
+
 Color
-
 ['Black' 'Green' 'Red' 'Blue' 'Gray' 'Pink' nan]
-Weight Capacity (kg)
 
+Weight Capacity (kg)
 [11.61172281 27.07853658 16.64375995 ...  9.55993494 26.63318223
   6.1757379 ]
-Price
 
+Price
 [112.15875  68.88056  39.1732  ...  78.7574  131.37288  41.96325]
