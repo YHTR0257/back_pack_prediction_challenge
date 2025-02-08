@@ -27,9 +27,42 @@
 カテゴリ変数が多いため、次元がかなり多くなってしまう。RandomForestなどは不向き・・・？やはりNNか
 Sizeは0(Small),1(Medium),2(Large)でできる
 
+カテゴリ間での標準偏差、平均、データ数を表示する。
+
+大きく変化しているカテゴリーに対してはOne Hot Encodingを適用するのがいいかもしれない。ちょっと計算負荷が高すぎる。
+
+
+今回のデータには
+Laptop compartment, Size, WaterproofはLabel Encodingでいい
+それ以外の4つのカテゴリ変数をどのようにして扱うかが難しい。
+
+分散の感じを見る限り、Materialの影響度は大きそうなためこれはOnehotEncodingで
+Laptop Compartment = 2のデータ数が少ないため、そこで大きな差が出ている。それ以外は結構均等に分布している。
+
+ColorもLabel Encodingで良さげ。そこまで大きな分散を持っていない。
+Brand, Material, Styleに対してTarget Encodingを行う。
+
+学習モデルはXGBoost、Light GBM、NNのどれか
+普通にアンサンブルしてもいいかもしれない。
+optuna LightGBMを使ってみる。
+
 ### What learn
 
+- Encoding方法
+Count Encoding, Label Encoding
+- - 今回のデータに関してはCount Encodingは適用しにくそう。自然言語処理などでは結構活躍するのではないか
+- - Target Encodingは通用しそう。Priceのmeanが一番良さげ。組み合わせたものも追加しておくといい。
+
+- Target Encodingでの注意点
+Leakageに注意すること。Overfittingと似ている概念。回避する方法として
+- - Greedy Target Encoding
+- - Leave-one-out Target Encoding
+- - Holdout Target Encoding これが一番いい方法
+- - Smoothing
+
 ### Next
+
+- Optuna LightGBMを使ってみる
 
 ### Problems
 
