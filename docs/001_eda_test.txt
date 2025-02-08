@@ -1,0 +1,105 @@
+------------------------------------
+Datas Info
+------------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 200000 entries, 0 to 199999
+Data columns (total 10 columns):
+ #   Column                Non-Null Count   Dtype  
+---  ------                --------------   -----  
+ 0   id                    200000 non-null  int64  
+ 1   Brand                 193773 non-null  object 
+ 2   Material              194387 non-null  object 
+ 3   Size                  195619 non-null  object 
+ 4   Compartments          200000 non-null  float64
+ 5   Laptop Compartment    195038 non-null  object 
+ 6   Waterproof            195189 non-null  object 
+ 7   Style                 194847 non-null  object 
+ 8   Color                 193215 non-null  object 
+ 9   Weight Capacity (kg)  199923 non-null  float64
+dtypes: float64(2), int64(1), object(7)
+memory usage: 15.3+ MB
+
+
+------------------------------------
+Statical Values 
+------------------------------------
+                  id   Compartments  Weight Capacity (kg)
+count  200000.000000  200000.000000         199923.000000
+mean   399999.500000       5.442855             17.993033
+std     57735.171256       2.888740              6.972079
+min    300000.000000       1.000000              5.000000
+25%    349999.750000       3.000000             12.068875
+50%    399999.500000       5.000000             18.054750
+75%    449999.250000       8.000000             23.965700
+max    499999.000000      10.000000             30.000000
+
+------------------------------------
+Heads 
+------------------------------------
+       id   Brand Material    Size  Compartments Laptop Compartment Waterproof      Style  Color  Weight Capacity (kg)
+0  300000    Puma  Leather   Small           2.0                 No         No       Tote  Green             20.671147
+1  300001    Nike   Canvas  Medium           7.0                 No        Yes   Backpack  Green             13.564105
+2  300002  Adidas   Canvas   Large           9.0                 No        Yes  Messenger   Blue             11.809799
+3  300003  Adidas    Nylon   Large           1.0                Yes         No  Messenger  Green             18.477036
+4  300004     NaN    Nylon   Large           2.0                Yes        Yes       Tote  Black              9.907953
+
+------------------------------------
+How many nulls 
+------------------------------------
+id                         0
+Brand                   6227
+Material                5613
+Size                    4381
+Compartments               0
+Laptop Compartment      4962
+Waterproof              4811
+Style                   5153
+Color                   6785
+Weight Capacity (kg)      77
+
+------------------------------------
+Unique Values 
+id                      200000
+Brand                        5
+Material                     4
+Size                         3
+Compartments                10
+Laptop Compartment           2
+Waterproof                   2
+Style                        3
+Color                        6
+Weight Capacity (kg)    128898
+
+------------------------------------
+Columns feature 
+id
+[300000 300001 300002 ... 499997 499998 499999]
+
+Brand
+['Puma' 'Nike' 'Adidas' nan 'Under Armour' 'Jansport']
+
+Material
+['Leather' 'Canvas' 'Nylon' 'Polyester' nan]
+
+Size
+['Small' 'Medium' 'Large' nan]
+
+Compartments
+[ 2.  7.  9.  1.  8.  6.  5.  3. 10.  4.]
+
+Laptop Compartment
+['No' 'Yes' nan]
+
+Waterproof
+['No' 'Yes' nan]
+
+Style
+['Tote' 'Backpack' 'Messenger' nan]
+
+Color
+['Green' 'Blue' 'Black' 'Red' 'Pink' 'Gray' nan]
+
+Weight Capacity (kg)
+[20.67114661 13.56410457 11.80979908 ... 26.89016346 25.76915286
+ 29.17502626]
+

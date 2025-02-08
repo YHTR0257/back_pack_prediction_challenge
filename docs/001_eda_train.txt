@@ -1,0 +1,111 @@
+------------------------------------
+Datas Info
+------------------------------------
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 300000 entries, 0 to 299999
+Data columns (total 11 columns):
+ #   Column                Non-Null Count   Dtype  
+---  ------                --------------   -----  
+ 0   id                    300000 non-null  int64  
+ 1   Brand                 290295 non-null  object 
+ 2   Material              291653 non-null  object 
+ 3   Size                  293405 non-null  object 
+ 4   Compartments          300000 non-null  float64
+ 5   Laptop Compartment    292556 non-null  object 
+ 6   Waterproof            292950 non-null  object 
+ 7   Style                 292030 non-null  object 
+ 8   Color                 290050 non-null  object 
+ 9   Weight Capacity (kg)  299862 non-null  float64
+ 10  Price                 300000 non-null  float64
+dtypes: float64(3), int64(1), object(7)
+memory usage: 25.2+ MB
+
+
+------------------------------------
+Statical Values 
+------------------------------------
+                  id   Compartments  Weight Capacity (kg)          Price
+count  300000.000000  300000.000000         299862.000000  300000.000000
+mean   149999.500000       5.443590             18.029994      81.411107
+std     86602.684716       2.890766              6.966914      39.039340
+min         0.000000       1.000000              5.000000      15.000000
+25%     74999.750000       3.000000             12.097867      47.384620
+50%    149999.500000       5.000000             18.068614      80.956120
+75%    224999.250000       8.000000             24.002375     115.018160
+max    299999.000000      10.000000             30.000000     150.000000
+
+------------------------------------
+Heads 
+------------------------------------
+   id         Brand Material    Size  Compartments Laptop Compartment Waterproof      Style  Color  Weight Capacity (kg)      Price
+0   0      Jansport  Leather  Medium           7.0                Yes         No       Tote  Black             11.611723  112.15875
+1   1      Jansport   Canvas   Small          10.0                Yes        Yes  Messenger  Green             27.078537   68.88056
+2   2  Under Armour  Leather   Small           2.0                Yes         No  Messenger    Red             16.643760   39.17320
+3   3          Nike    Nylon   Small           8.0                Yes         No  Messenger  Green             12.937220   80.60793
+4   4        Adidas   Canvas  Medium           1.0                Yes        Yes  Messenger  Green             17.749338   86.02312
+
+------------------------------------
+How many nulls 
+------------------------------------
+id                         0
+Brand                   9705
+Material                8347
+Size                    6595
+Compartments               0
+Laptop Compartment      7444
+Waterproof              7050
+Style                   7970
+Color                   9950
+Weight Capacity (kg)     138
+Price                      0
+
+------------------------------------
+Unique Values 
+id                      300000
+Brand                        5
+Material                     4
+Size                         3
+Compartments                10
+Laptop Compartment           2
+Waterproof                   2
+Style                        3
+Color                        6
+Weight Capacity (kg)    181596
+Price                    48212
+
+------------------------------------
+Columns feature 
+id
+
+[     0      1      2 ... 299997 299998 299999]
+Brand
+
+['Jansport' 'Under Armour' 'Nike' 'Adidas' 'Puma' nan]
+Material
+
+['Leather' 'Canvas' 'Nylon' nan 'Polyester']
+Size
+
+['Medium' 'Small' 'Large' nan]
+Compartments
+
+[ 7. 10.  2.  8.  1.  3.  5.  9.  6.  4.]
+Laptop Compartment
+
+['Yes' 'No' nan]
+Waterproof
+
+['No' 'Yes' nan]
+Style
+
+['Tote' 'Messenger' nan 'Backpack']
+Color
+
+['Black' 'Green' 'Red' 'Blue' 'Gray' 'Pink' nan]
+Weight Capacity (kg)
+
+[11.61172281 27.07853658 16.64375995 ...  9.55993494 26.63318223
+  6.1757379 ]
+Price
+
+[112.15875  68.88056  39.1732  ...  78.7574  131.37288  41.96325]
